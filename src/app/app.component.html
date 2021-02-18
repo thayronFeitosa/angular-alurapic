@@ -1,3 +1,6 @@
-<ap-photo url="https://i.pinimg.com/originals/52/d9/d4/52d9d42b3a0199e5215ef519bad07d52.jpg" description="gata"></ap-photo>
-<ap-photo url="https://i.pinimg.com/originals/52/d9/d4/52d9d42b3a0199e5215ef519bad07d52.jpg" description="gata"></ap-photo>
+<ap-photo
+  *ngFor="let photo of photos"
+  [url]="photo.url"
+  [description]="photo.description">
+</ap-photo>
 
